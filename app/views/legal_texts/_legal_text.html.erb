@@ -1,25 +1,14 @@
 <div id="<%= dom_id legal_text %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= legal_text.title %>
-  </p>
+  <h1 class="text-6xl font-normal leading-normal mt-0 mb-2"> <%= legal_text.title %> </h1>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Content:</strong>
     <%= raw legal_text.content %>
   </p>
 
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Position:</strong>
-    <%= legal_text.position %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Slug:</strong>
-    <%= legal_text.slug %>
-  </p>
-
   <% if action_name != "show" %>
+    <p class="my-5">
+      Created: <%= time_tag legal_text.created_at, "data-local": "time-ago" %>
+    </p>
     <%= link_to "Show this legal text", legal_text, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to 'Edit this legal text', edit_legal_text_path(legal_text), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
