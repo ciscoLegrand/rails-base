@@ -1,13 +1,10 @@
-<div class="container mx-auto px-4">
-  <section class="py-8 px-4 text-center">
+
+  <section class="mx-auto px-4 py-8  text-center">
     <div class="max-w-auto mx-auto">
-      <div class="md:max-w-lg mx-auto">
-        <!-- llustration by Ouch.pics https://icons8.com/ouch/illustration/cherry-list-is-empty-1 -->
-        <%= inline_svg('errors/404.svg', class:"w-64 mx-auto")%>                    
-      </div>
       <h2 class="mt-8 uppercase text-xl lg:text-5xl font-black">We are sorry, Page not found!</h2>
-      <p class="mt-6 uppercase text-sm lg:text-base text-gray-900">The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+      <p class="mt-6 uppercase text-sm lg:text-base text-gray-900">The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>      
+        <!-- llustration by Ouch.pics https://icons8.com/ouch/illustration/cherry-list-is-empty-1 -->
+        <%= inline_svg('errors/404.svg', class:"mx-auto")%>      
       <%= link_to 'Back to Homepage', '/', class:"mt-6 bg-blue-500 hover:bg-blue-700 text-white font-light py-4 px-6 rounded-full inline-block uppercase shadow-md" %>
     </div>
   </section>
-</div>
