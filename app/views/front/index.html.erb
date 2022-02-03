@@ -1,5 +1,10 @@
-<div>
-  <h1 class="font-bold text-4xl">Front#index</h1>
-  <p>Find me in app/views/front/index.html.erb</p>
-  <p data-controller="hello"></p>
+<div id="options" data-controller="visibility">
+  <h1>Toggle Visibility</h1>
+  
+  <button data-action="visibility#showTargets" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show All Elements</button>
+  <button data-action="visibility#hideTargets" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hide All Elements</button>
+  <button data-action="visibility#toggleTargets" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Toggle Element Visibility</button>
+    
+  <p data-visibility-target="hideable">The Flamboyent Thing #1<p/>
+  <p data-visibility-target="hideable" hidden>The Slightly Stealthy Thing #2<p/>
 </div>
