@@ -13,7 +13,9 @@
 
   <body>
     <%= render 'layouts/partials/navigation' %>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <%= turbo_frame_tag :notice, class: 'w-full' do %>
+    <% end %> 
+    <main class="container mx-auto min-h-screen  mt-8 mb-8 px-5 flex" style="min-height: 50vh;">
       <%= yield %>
     </main>
     <%= render 'layouts/partials/footer' %>
